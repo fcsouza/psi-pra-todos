@@ -1,11 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
+import Sequelize from 'sequelize';
 import User from '../models/User';
 import Paciente from '../models/Paciente';
+import config from '../../config/database';
 
+const sequelize = new Sequelize(config);
 class UserController {
   async store(req, res) {
+    const transaction = await sequelize.transaction();
+
     const userExists = await User.findOne({
       where: { email: req.body.email },
     });
@@ -28,12 +33,17 @@ class UserController {
 
     const passwordHash = await bcrypt.hash(password, 8);
 
-    const response = await User.create({
-      email,
-      password_hash: passwordHash,
-      pacientes_id: pacientes.id,
-    });
+    const response = await User.create(
+      {
+        email,
+        password_hash: passwordHash,
+        pacientes_id: pacientes.id,
+      },
+      { transaction }
+    );
 
+    // await transaction.rollback();
+    await transaction.commit();
     return res.json(response);
   }
 }
