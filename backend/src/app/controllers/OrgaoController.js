@@ -3,25 +3,26 @@ import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
 import Sequelize from 'sequelize';
 import User from '../models/User';
-import Paciente from '../models/Paciente';
+import Orgao from '../models/Orgao';
 import config from '../../config/database';
 
 const sequelize = new Sequelize(config);
 
-class UserController {
+class ProfessionalController {
   async store(req, res) {
     const transaction = await sequelize.transaction();
     try {
       const schema = Yup.object().shape({
-        nome: Yup.string().required(),
-        data_nascimento: Yup.string().required(),
-        cpf: Yup.string().required(),
         email: Yup.string()
           .email()
           .required(),
         password: Yup.string()
           .required()
           .min(6),
+        crp: Yup.string().required(),
+        nome: Yup.string().required(),
+        data_nascimento: Yup.string().required(),
+        cpf: Yup.string().required(),
       });
 
       if (!(await schema.isValid(req.body))) {
@@ -36,11 +37,11 @@ class UserController {
         return res.status(400).json({ error: 'User already exists' });
       }
 
-      const { nome, data_nascimento, cpf } = req.body;
+      const { crp, nome, data_nascimento, cpf } = req.body;
 
-      // eslint-disable-next-line no-unused-vars
-      const pacientesCreate = await Paciente.create(
+      const profissionalCreate = await Profissional.create(
         {
+          crp,
           nome,
           data_nascimento,
           cpf,
@@ -56,7 +57,7 @@ class UserController {
         {
           email,
           password_hash: passwordHash,
-          pacientes_id: pacientesCreate.id,
+          profissionais_id: profissionalCreate.id,
         },
         { transaction }
       );
@@ -67,9 +68,9 @@ class UserController {
     } catch (e) {
       await transaction.rollback();
 
-      throw new Error(`Error saving User: ${e}`);
+      throw new Error(`Error saving Professional: ${e}`);
     }
   }
 }
 
-export default new UserController();
+export default new ProfessionalController();
