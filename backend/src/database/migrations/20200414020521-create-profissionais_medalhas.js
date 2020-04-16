@@ -9,7 +9,7 @@ module.exports = {
       },
       profissionais_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'profissionais', key: 'id' },
+        references: { model: 'profissionals', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,
