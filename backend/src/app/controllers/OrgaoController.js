@@ -19,10 +19,10 @@ class ProfessionalController {
         password: Yup.string()
           .required()
           .min(6),
-        crp: Yup.string().required(),
-        nome: Yup.string().required(),
-        data_nascimento: Yup.string().required(),
-        cpf: Yup.string().required(),
+        nome_fantasia: Yup.string().required(),
+        cnpj: Yup.string().required(),
+        telefone: Yup.string().required(),
+        responsavel: Yup.string().required(),
       });
 
       if (!(await schema.isValid(req.body))) {
@@ -37,14 +37,14 @@ class ProfessionalController {
         return res.status(400).json({ error: 'User already exists' });
       }
 
-      const { crp, nome, data_nascimento, cpf } = req.body;
+      const { nome_fantasia, cnpj, telefone, responsavel } = req.body;
 
-      const profissionalCreate = await Profissional.create(
+      const orgaoCreate = await Orgao.create(
         {
-          crp,
-          nome,
-          data_nascimento,
-          cpf,
+          nome_fantasia,
+          cnpj,
+          telefone,
+          responsavel,
         },
         { transaction }
       );
@@ -57,7 +57,7 @@ class ProfessionalController {
         {
           email,
           password_hash: passwordHash,
-          profissionais_id: profissionalCreate.id,
+          orgaos_id: orgaoCreate.id,
         },
         { transaction }
       );
