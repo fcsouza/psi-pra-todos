@@ -24,10 +24,10 @@ class User extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Profissional, { foreignKey: 'profissionais_id' });
+    this.belongsTo(models.Professional, { foreignKey: 'professionals_id' });
     this.belongsTo(models.Paciente, { foreignKey: 'pacientes_id' });
     this.belongsTo(models.Orgao, { foreignKey: 'orgaos_id' });
-    this.belongsTo(models.Midia, { foreignKey: 'midias_id' });
+    this.belongsTo(models.File, { foreignKey: 'midias_id' });
   }
 
   checkPassword(password) {

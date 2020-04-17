@@ -16,7 +16,7 @@ class Agenda extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Profissional, { foreignKey: 'profissionais_id' });
+    this.belongsTo(models.Professional, { foreignKey: 'professional_id' });
   }
 }
 

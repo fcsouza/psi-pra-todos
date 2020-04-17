@@ -5,23 +5,23 @@ import databaseConfig from '../config/database';
 import User from '../app/models/User';
 import Orgao from '../app/models/Orgao';
 import Paciente from '../app/models/Paciente';
-import Profissional from '../app/models/Profissional';
+import Professional from '../app/models/Professional';
 import Agenda from '../app/models/Agenda';
 import Agendamento from '../app/models/Agendamento';
 import Medalha from '../app/models/Medalha';
-import Midia from '../app/models/Midia';
-import ProfissionalMedalha from '../app/models/ProfissionalMedalhas';
+import File from '../app/models/File';
+import ProfessionalMedalha from '../app/models/ProfessionalMedalha';
 
 const models = [
   User,
-  Profissional,
+  Professional,
   Paciente,
   Orgao,
   Agenda,
   Agendamento,
   Medalha,
-  Midia,
-  ProfissionalMedalha,
+  File,
+  ProfessionalMedalha,
 ];
 
 class Database {

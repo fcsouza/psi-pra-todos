@@ -1,20 +1,34 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('midia', {
+    return queryInterface.createTable('professionals', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
       },
-      name: {
+      crp: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
+      orgaos_id: {
+        type: Sequelize.INTEGER,
+        references: { model: 'orgaos', key: 'id' },
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
+        allowNull: true,
+      },
+      nome: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      path: {
+      data_nascimento: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
+      },
+      cpf: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       created_at: {
         type: Sequelize.DATE,
@@ -28,6 +42,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('midia');
+    return queryInterface.dropTable('professionals');
   },
 };

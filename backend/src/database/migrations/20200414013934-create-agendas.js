@@ -15,9 +15,9 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      profissionais_id: {
+      professionals_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'profissionais', key: 'id' },
+        references: { model: 'professionals', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,

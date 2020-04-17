@@ -16,9 +16,9 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      profissionais_id: {
+      professionals_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'profissionals', key: 'id' },
+        references: { model: 'professionals', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,
@@ -39,7 +39,7 @@ module.exports = {
       },
       midias_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'midias', key: 'id' },
+        references: { model: 'files', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,

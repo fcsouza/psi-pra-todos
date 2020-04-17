@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
 import Sequelize from 'sequelize';
 import User from '../models/User';
-import Profissional from '../models/Profissional';
+import Professional from '../models/Professional';
 import config from '../../config/database';
 
 const sequelize = new Sequelize(config);
@@ -39,7 +39,7 @@ class ProfessionalController {
 
       const { crp, nome, data_nascimento, cpf } = req.body;
 
-      const profissionalCreate = await Profissional.create(
+      const profissionalCreate = await Professional.create(
         {
           crp,
           nome,
@@ -57,7 +57,7 @@ class ProfessionalController {
         {
           email,
           password_hash: passwordHash,
-          profissionais_id: profissionalCreate.id,
+          professionals_id: profissionalCreate.id,
         },
         { transaction }
       );

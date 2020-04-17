@@ -13,7 +13,7 @@ module.exports = {
       },
       midias_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'midias', key: 'id' },
+        references: { model: 'files', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,

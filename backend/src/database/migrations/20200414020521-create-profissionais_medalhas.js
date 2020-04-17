@@ -1,15 +1,15 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('profissionais_medalhas', {
+    return queryInterface.createTable('professionals_medalhas', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
       },
-      profissionais_id: {
+      professionals_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'profissionals', key: 'id' },
+        references: { model: 'professionals', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'SET NULL',
         allowNull: true,
@@ -40,6 +40,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('medalhas');
+    return queryInterface.dropTable('professionals_medalhas');
   },
 };

@@ -1,6 +1,6 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Midia extends Model {
+class File extends Model {
   static init(sequelize) {
     super.init(
       {
@@ -22,4 +22,4 @@ class Midia extends Model {
   }
 }
 
-export default Midia;
+export default File;

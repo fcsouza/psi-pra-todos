@@ -15,7 +15,7 @@ class Medalha extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Midia, { foreignKey: 'midias_id' });
+    this.belongsTo(models.File, { foreignKey: 'midias_id' });
   }
 }
 
