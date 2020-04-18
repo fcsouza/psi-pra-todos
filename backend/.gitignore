@@ -4,3 +4,5 @@ tmp/*
 !tmp/.gitkeep
 
 dist
+
+package-lock.json
