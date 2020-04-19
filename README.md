@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src=".github\logo.png" alt="Project logo" width=350px></a>
+ <img src=".github\logo.png" alt="Project logo" width=250px></a>
 </p>
 
 <h1 align="center">Pandemic Hackfest Saúde 2020 - Projeto: PSI PARA TODOS</h1>
