@@ -25,6 +25,7 @@
 <a href="#dev_acess">Acesso para plataforma</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#roadmap">Metas de desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#authors">Autores</a>
 </p>
@@ -122,6 +123,12 @@ JavaScript Framework
 
 ### Database
 - [PostgreSQL](https://www.postgresql.org/) - Open source database(SGBD)
+
+
+## 👨‍💼 Metas de desenvolvimento <a name = "roadmap"></a>
+
+- Desenvolver o sistema de agendamentos.
+- Desenvolver o sistema de ranking e gamificação.
 
 ## 🤔 Como contribuir <a name = "contribute"></a>
 
