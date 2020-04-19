@@ -27,7 +27,8 @@
 <a href="#installing">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#authors">Autores</a>
+<a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="https://psiparatodos.tk/">Visualizar Site</a>
 </p>
 
 
@@ -110,7 +111,7 @@ JavaScript Framework
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
 - Faça push para a sua branch: `git push origin minha-feature`.
 
-## ✍️ Autor <a name = "authors"></a>
+## ✍️ Autores <a name = "authors"></a>
 
 - [@Jéssica Aguiar](https://www.linkedin.com/in/jessika-aguiar)
 - [@Erisson Alexandre](erisonalexandre12@gmail.com)
