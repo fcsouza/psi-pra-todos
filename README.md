@@ -23,12 +23,12 @@
 ## 📝 Conteúdo
 <p align="center">
 <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#dev_acess">Acesso para plataforma</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#installing">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="https://psiparatodos.tk/">Visualizar Site</a>
+<a href="https://psiparatodos.tk/">Visualizar a plataforma</a>
 </p>
 
 
@@ -44,6 +44,27 @@
 </p>
 
 
+
+## 🔩 Acesso para plataforma - Em desenvolvimento <a name = "dev_acess"></a>
+
+[Clique para logar](https://psiparatodos.tk/login)
+
+```
+
+-Acesso Profissional
+Login:profissional@profissional.com.br
+Password:123456
+
+-Acesso Paciente
+Login:paciente@paciente.com.br
+Password:123456
+
+-Acesso Órgão
+Login:orgao@orgao.com.br
+Password:123456
+
+```
+
 ## 🏁 Iniciando <a name = "getting_started"></a>
 
 Instruções de como acessar as rotas e instalação.
@@ -53,7 +74,7 @@ Instruções de como acessar as rotas e instalação.
 ```
 git clone https://github.com/fcsouza/psi-pra-todos
 
-Install postgres
+Instalar o postgres caso queira executar o projeto em máquina local.
 
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 docker run start database
