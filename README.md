@@ -10,9 +10,7 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/languages/count/fcsouza/psi-pra-todos)]()
 [![GitHub Pull Requests](https://img.shields.io/github/last-commit/fcsouza/psi-pra-todos)]()
-[![Made By](https://img.shields.io/badge/Developers-Erisson%20Alexandre-brightgreen)]()
-[![Made By](https://img.shields.io/badge/-J%C3%A9ssica%20Aguiar-brightgreen)]()
-[![Made By](https://img.shields.io/badge/-Fabr%C3%ADcio%20Cavalcante-brightgreen)]()
+[![Made By](https://img.shields.io/badge/Made%20By-Krakatoa%20Team-brightgreen)]()
 [![License](https://img.shields.io/badge/license-GPL-blue)](/LICENSE.gpl)
 
 </div>
@@ -134,9 +132,14 @@ JavaScript Framework
 
 ## ✍️ Autores <a name = "authors"></a>
 
-- [@Jéssica Aguiar](https://www.linkedin.com/in/jessika-aguiar)
-- [@Erisson Alexandre](erisonalexandre12@gmail.com)
-- [@Fabricio Cavalcante](https://www.linkedin.com/in/fabricio-cavalcante/)
+- [Amanda Barbosa -	Business](https://www.linkedin.com/in/amanda-barbosa-94064018a/)
+- [Débora Costa -	Business](https://www.linkedin.com/in/debora-costa-38a56971/)
+- [Erison Alexandre Pimenta - Full Stack](erisonalexandre12@gmail.com)
+- [Fabrício Cavalcante - Backend](https://www.linkedin.com/in/fabricio-cavalcante/)
+- [Jéssika Aguiar - Frontend](https://www.linkedin.com/in/jessika-aguiar)
+- [Julio Ricardo - Design](https://www.linkedin.com/in/ojulior)
+- [Silmara Lima - Psicologia](@silmaralimapsy)
+- [Tatiane Rodrigues - Business](https://www.linkedin.com/in/tatiane-veridico-rodrigues-71766429)
 
 ## 🗒 Licença
 
