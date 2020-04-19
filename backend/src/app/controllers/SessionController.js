@@ -19,7 +19,7 @@ class SessionController {
     }
 
     const { id } = user;
-    var perfil = '';
+    let perfil = '';
     if (user.professionals_id) {
       perfil = 'profissional';
     } else if (user.pacientes_id) {
@@ -38,7 +38,7 @@ class SessionController {
       user: {
         id,
         email,
-        perfil
+        perfil,
       },
       token: jwt.sign({ id }, authConfig.secret, {
         expiresIn: authConfig.expiresIn,

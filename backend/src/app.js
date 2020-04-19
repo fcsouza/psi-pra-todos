@@ -13,9 +13,12 @@ import './database';
 class App {
   constructor() {
     this.server = express();
-    this.server.use(cors({
-      allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-    }));
+    this.server.use(
+      cors({
+        allowedHeaders:
+          'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+      })
+    );
     this.middlewares();
     this.routes();
     this.exceptionHandler();
