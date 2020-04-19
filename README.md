@@ -12,6 +12,7 @@
 [![GitHub Pull Requests](https://img.shields.io/github/last-commit/fcsouza/psi-pra-todos)]()
 [![Made By](https://img.shields.io/badge/Made%20By-Krakatoa%20Team-brightgreen)]()
 [![License](https://img.shields.io/badge/license-GPL-blue)](/LICENSE.gpl)
+[![Site](https://img.shields.io/badge/Clique%20me-%20para%20visualizar%20a%20plataforma-brightgreen)](https://psiparatodos.tk/)
 
 </div>
 
@@ -25,8 +26,7 @@
 <a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="https://psiparatodos.tk/">Visualizar a plataforma</a>
+<a href="#authors">Autores</a>
 </p>
 
 
