@@ -30,13 +30,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <h1>Equipe de Desenvolvimento</h1>
             <h2>Somos um time multidisciplinar engajados em formular soluções para promoção da saúde, através de um evento
               promovido pelo Ministério Público do Amazonas, intitulado Pandemic Hackfest Saúde.</h2>
           </div>
-          <div class="col d-flex">
-            <img :src="require('../../assets/equipe.svg')" class="equipe mx-auto">
+          <div class="col-12 d-flex">
+            <img :src="require('../../assets/equipe.png')" class="equipe img-fluid mx-auto">
           </div>
         </div>
       </div>
