@@ -86,7 +86,7 @@ $ npm i || yarn install
 
 # Run Migrations
 
-$ npm sequelize db:migrate || yarn sequelize db:migrate 
+$ npx sequelize db:migrate || yarn sequelize db:migrate 
 $ npm run dev || yarn dev
 
 # Go into the frontend repository
@@ -129,6 +129,7 @@ JavaScript Framework
 
 - Desenvolver o sistema de agendamentos.
 - Desenvolver o sistema de ranking e gamificação.
+- Desenvolver o sistema de relatórios para instituições.
 
 ## 🤔 Como contribuir <a name = "contribute"></a>
 
