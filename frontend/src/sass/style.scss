@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import '~select2/dist/css/select2.min.css';
+@import "~vue-select/src/scss/vue-select.scss";
+@import "./inputs";
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+input, button, select, optgroup, textarea {
+  font-family: 'Nunito', sans-serif
+}
+
+html, body {
+  height: 100%;
+  background-color: #F8F9FA;
+  overflow-y: auto;
+}
+
+#app {
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: calc(100% - 69px);
+}
+
+#app > div {
+  height: 100%;
+}
+
+.text-psi {
+  color: #458AFF;
+}
+
+h1 {
+  color: #4585FF;
+}
+h2 {
+	font-size: 24px;
+	color: #6E6E6E;
+}
+
+button.psi-btn {
+  width: 239px;
+  height: 40px;
+  background-color: #4589ff;
+  border-radius: 1.30em;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+
+  p {
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    width: 186px;
+    margin: 0;
+  }
+
+  span {
+    display: inline-block;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 1.25rem;
+    text-align: center;
+    color: #4589FF;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+.altura-100-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: calc(100% - 81px);
+  padding: 20px 0;
+}
+/*fontes para o titulo todos*/
+@font-face{
+	font-family: historicSeattle;
+	src: url('font/Historic_Seattle_PersonaUseOnly.ttf');
+}
+.nomedosite{
+	display: inline;
+	word-spacing: 1px;
+	text-align: left;
+	.psipara{
+		color: #FFFFFF;
+		font-weight: bold;
+		text-shadow: 0px 2px 5px #000;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	.todos{
+		font-family: historicSeattle;
+		color: #fd3c65;
+		font-size: 35px;
+		text-transform: lowercase;
+	}
+}
+
+.card-header {
+  background: linear-gradient(90deg, #43C7FF 0%, #44A9FF 64.99%, #4584FF 102.13%);
+  color: #fff;
+  border-radius: 10px 10px 0 0 !important;
+}
